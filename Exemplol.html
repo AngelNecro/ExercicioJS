@@ -1,0 +1,102 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Novo Parágrafo</title> 	
+	<style> 
+		.classelegal { border: solid black 20px ; } 
+	</style>
+</head>
+<body>
+	<h1>Exemplo</h1>
+	<p id="firstP">Primeiro Paragráfo</p> 
+	<p id="firstP2">Segundo Paragráfo</p> 
+	<p id="firstP3">Terceiro Paragráfo</p> 
+</body>
+
+<script>
+	console.log("exercicio 1");
+
+	function min_um(a,b) {
+		return (a <= b) ? a : b
+	}
+
+	function min_dois(a,b) {
+		let result = null
+		if (a <= b) {
+			result = a
+		}
+		else {
+			result = b
+		}
+		return result;
+	}
+
+	let result = min_um(10,20);
+	alert(result);
+
+	console.log("exericio 2");
+
+	function elevado(x,y){
+		let resp = Math.pow(x,y);
+		return resp;
+
+	}
+
+	let resultado = elevado(6,8);
+	console.log(resultado);
+
+	console.log("exericio 3");
+
+	let var1 = prompt("Declarar o valor para X: ");
+	let var2 = prompt("Declarar o valor para Y: ");
+
+	let resultado2 = elevado(var1,var2);
+	console.log("O resultado é: " + resultado2);
+
+	console.log("exericio 4");
+
+
+	function valormaior(x,y){
+		let result4 = Math.max(x,y);
+		return result4;
+
+	}
+
+	let valormaiorresp = valormaior(8,15);
+	console.log("o numero maior é: " + valormaiorresp);
+
+	console.log("exericio 5");
+
+	let aluno = {}
+	aluno.nome = "Luiz Gustavo";
+	console.log(aluno.nome);
+	aluno.sobrenome = "Lopes Cunha";
+	console.log(aluno.sobrenome);
+	aluno.nome = "Ana Luiza";
+	console.log(aluno.nome);
+	delete aluno.nome;
+	console.log(aluno.nome);
+	console.log(aluno.hasOwnProperty("time"));
+	
+	console.log("exericio 6");	
+
+	let salarios = {  
+	Neymar: 100,
+  	Ronaldinho: 160,  
+  	Ronaldo: 130 }
+
+  	function somarvalores(){
+  	let soma = (salarios.Neymar + salarios.Ronaldo + salarios.Ronaldinho)
+  	return soma;
+  	alert (soma);
+	}
+
+	let somatudo = somarvalores();
+	console.log("o resultado é:" + somatudo);
+	alert("Exercicio 6 " + somatudo);
+
+
+
+</script>
+</html>

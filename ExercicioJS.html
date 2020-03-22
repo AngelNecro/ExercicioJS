@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Brincando com JavaScript</title>
+</head>
+<body>
+	<h1>Página Inicial</h1>
+	<p id="paragrafo">Exemplo de aula <span>teste</span> Exemplo de aula <span>Lorem <strong>negrito<strong></span> Exemplo de aula</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li id="item">Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+    </ul>
+</body>
+<script>
+console.log("Exercicio 1")
+let valor1 = document.getElementById("paragrafo").innerText;
+console.log(valor1);
+
+console.log("Exercicio 2")
+let valor2 = document.querySelector("#paragrafo span").innerText;
+console.log(valor2)
+let valor3 = document.querySelector("#paragrafo span:nth-child(2)").innerText;
+console.log(valor3)
+
+console.log("Exercicio 3")
+let valor4 = document.querySelector("#item").innerHTML = "9";
+console.log(valor4);
+
+console.log("Exercicio 4")
+function exibirInnerHTML() {
+    console.log(document.getElementById("paragrafo").innerText);
+}
+
+let var5 = exibirInnerHTML();
+
+console.log("Exercicio 5")
+
+function exibirInnerHTMLP() {
+    console.log(document.querySelector("p#paragrafo").innerText);
+}
+
+let var6 = exibirInnerHTMLP();
+
+
+function exibirInnerHTMLstrong() {
+    console.log(document.querySelector("#paragrafo strong").innerText);
+}
+
+let var7 = exibirInnerHTMLstrong();
+
+function exibirInnerHTMLstrong() {
+    console.log(document.querySelector("#paragrafo strong").innerText);
+}
+
+let var8 = exibirInnerHTMLstrong();
+
+
+function exibirInnerHTMLLI() {
+    console.log(document.getElementById("item").innerText);
+}
+
+let var9 = exibirInnerHTMLLI();
+
+</script>
+</html>
